@@ -30,10 +30,11 @@ A simple web application allowing users to create posts with images. Built using
    npm install
    ```
 
-3. Create a `.env` file in the `server` folder with your MongoDB URI:
+3. Create a `.env` file in the `Backend` folder with your MongoDB URI:
    ```plaintext
    PORT=5000
    MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=secret_key
    ```
 
 4. Start the server:
@@ -43,7 +44,7 @@ A simple web application allowing users to create posts with images. Built using
 
 ### Frontend Setup
 
-1. Navigate to the `client` folder:
+1. Navigate to the `Frontend` folder:
    ```bash
    cd Frontend
    ```
