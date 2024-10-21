@@ -46,12 +46,16 @@ const EditPost = () => {
     }
 
     try {
-      await axios.put(`http://localhost:5000/api/posts/${id}`, formData, {
-        headers: {
-          "Content-Type": "multipart/form-data", // Set content type for file upload
-          Authorization: `Bearer ${localStorage.getItem("token")}`, // Include JWT token for authentication
-        },
-      });
+      await axios.put(
+        `https://post-app-livid.vercel.app/api/posts/${id}`,
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data", // Set content type for file upload
+            Authorization: `Bearer ${localStorage.getItem("token")}`, // Include JWT token for authentication
+          },
+        }
+      );
       navigate("/"); // Redirect after successful update
     } catch (error) {
       console.error("Error updating post:", error);
