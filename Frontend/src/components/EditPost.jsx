@@ -47,7 +47,7 @@ const EditPost = () => {
 
     try {
       await axios.put(
-        `https://post-app-livid.vercel.app/api/posts/${id}`,
+        `https://postapp-backend-n1p8.onrender.com/api/posts/${id}`,
         formData,
         {
           headers: {

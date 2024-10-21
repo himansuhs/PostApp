@@ -14,7 +14,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://post-app-livid.vercel.app/api/auth/login",
+        "https://postapp-backend-n1p8.onrender.com/api/auth/login",
         formData
       );
       localStorage.setItem("token", data.token);

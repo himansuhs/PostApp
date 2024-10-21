@@ -32,7 +32,7 @@ const CreatePost = () => {
 
     try {
       const response = await axios.post(
-        "https://post-app-livid.vercel.app/api/posts",
+        "https://postapp-backend-n1p8.onrender.com/api/posts",
         formDataObj,
         config
       );

@@ -18,7 +18,7 @@ const Register = () => {
     e.preventDefault();
     try {
       await axios.post(
-        "https://post-app-livid.vercel.app/api/auth/register",
+        "https://postapp-backend-n1p8.onrender.com/api/auth/register",
         formData
       );
       navigate("/login");
