@@ -12,7 +12,13 @@ const app = express();
 
 // Middleware
 app.use(bodyParser.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://post-app-yw1z.vercel.app/"],
+    methods: ["POST", "GET"],
+    credentials: true,
+  })
+);
 app.use("/uploads", express.static("uploads"));
 
 // Routes
